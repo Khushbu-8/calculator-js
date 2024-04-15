@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>clculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div align="center">
+        <h1>calculator</h1>
+        <form id="calc">
+            <table class="tbl" align="center">
+                <tr>
+                    <td><input type="text" id="ans"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="calc.ans.value =''" type="button">AC</button>
+                        <button onclick="calc.ans.value = calc.ans.value.slice(0,calc.ans.value.length-1)" type="button">DE</button>
+                        <button onclick="calc.ans.value+='/'" type="button">/</button>
+                        <button onclick="calc.ans.value+='*'" type="button">*</button>
+                       
+                       
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="calc.ans.value+='7'" type="button">7</button>
+                        <button onclick="calc.ans.value+='8'" type="button">8</button>
+                        <button onclick="calc.ans.value+='9'" type="button">9</button>
+                        <button onclick="calc.ans.value+='-'" type="button">-</button>
+                       
+
+                    </td>
+               </tr>
+                <tr>
+                    <td>
+                        <button onclick="calc.ans.value+='4'" type="button">4</button>
+                        <button onclick="calc.ans.value+='5'" type="button">5</button>
+                        <button onclick="calc.ans.value+='6'" type="button">6</button>
+                        <button onclick="calc.ans.value+='+'" type="button">+</button>
+                       
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="calc.ans.value+='1'" type="button">1</button>
+                        <button onclick="calc.ans.value+='2'" type="button">2</button>
+                        <button onclick="calc.ans.value+='3'" type="button">3</button>
+                        <button onclick="calc.ans.value+='%'" type="button">%</button>
+                        
+                    </td>
+                </tr>
+               
+               <tr>
+                    <td>
+                        <button onclick="calc.ans.value+='0'" type="button" >0</button>
+                        <button onclick="calc.ans.value+='.'" type="button">.</button>
+                        <button onclick="calc.ans.value=eval(calc.ans.value)" type="button" class="zero">=</button>
+                       
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
